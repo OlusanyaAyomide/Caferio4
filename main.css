@@ -1,0 +1,294 @@
+@tailwind base;
+@tailwind components;
+
+
+.container{
+    @apply max-w-screen-2xl mx-auto px-12 sm:px-6  
+}
+
+.row{
+    @apply flex flex-wrap
+}
+
+.header{
+    @apply bg-gradient-to-b from-orange-200 to-transparent
+}
+.badge{
+    @apply inline-block py-2 px-3 bg-emerald-100 rounded-[24px] text-orange-700 text-xs
+}
+.header-text{
+    @apply capitalize text-4xl md:w-9/12 md:text-[36px] lg:w-full font-bold lg:text-5xl mt-4
+}
+.delivery-span{
+    @apply inline-block bg-orange-500 rotate-3 py-1 px-2
+}
+.header p{
+    @apply mt-3 text-[14px] text-gray-500
+}
+.header-customer{
+    @apply mt-4 flex 
+}
+.customer{
+    @apply block w-[40px] h-[40px] border-[3px]  rounded-full -ml-3 first:ml-0 overflow-hidden
+}
+.customer-img{
+    @apply w-full h-full
+}
+.happy-customer{
+    @apply inline-block ml-6 text-xs text-orange-800 font-bold mt-2
+}
+.header-row-left{
+    @apply  w-full lg:w-6/12 p-5 pt-28 flex items-center lg:pt-0 lg:mb-28
+}
+.header-row-right{
+    @apply hidden lg:block  w-full lg:w-6/12 p-6  h-auto
+}
+.header-img{
+    @apply w-full h-full mx-auto object-contain
+}
+.logo-cont{
+    @apply flex absolute top-5 left-10
+}
+.logo{
+    @apply w-[30px] h-[30px] rounded-3xl
+}
+.icon-text{
+    @apply block font-bold ml-1 mt-1 text-xl after:w-2 after:h-2  after:bg-black
+}
+
+/* 
+navbar */
+
+.nav{
+    @apply fixed w-full h-full top-0 -right-full bg-black/30 transition-all duration-300 z-30
+}
+.nav-container{
+    @apply h-full w-10/12 bg-orange-100 sm:w-6/12 md:w-5/12 lg:w-4/12 absolute right-0 flex items-center
+}
+.nav-item{
+    @apply px-4 py-2 block text-base text-orange-800 capitalize hover:bg-orange-500 hover:text-white
+    transition-all hover:px-6 duration-700
+}
+.close{
+    @apply absolute top-6 left-6 text-orange-500 scale-125
+}
+.open-div{
+    @apply flex h-[40px] w-[40px] rounded-full fixed top-3 right-2 bg-orange-500 items-center justify-center text-white z-10
+}
+
+
+
+/* CAtegory */
+.row-cont{
+    @apply flex flex-wrap 
+}
+
+.category-heading{
+    @apply text-orange-500 uppercase text-base mb-5 font-semibold underline decoration-wavy decoration-[2px] underline-offset-4 decoration-orange-500
+}
+.category-item{
+    @apply w-full overflow-hidden block rounded-xl h-[120px] sm:h-[140px] relative before:absolute before:inset-0 before:w-full before:h-full before:bg-orange-500 before:z-20 before:scale-0 before:rounded-full hover:before:scale-150 before:transition-all before:duration-1000 hover:before:rounded-none hover:before:rounded-tr-full before:origin-top-right hover:before:rotate-45
+}
+.category-image{
+    @apply w-full h-full object-cover
+}
+.category-layer{
+    @apply absolute inset-0 w-full h-full bg-black/50 flex justify-center items-center p-2
+}
+.space-container{
+    @apply w-full p-2 sm:w-6/12 md:w-4/12 lg:w-3/12 xl:w-[20%]
+}
+
+
+
+/* DISHES */
+
+.dishes{
+    @apply w-full bg-gradient-to-b from-orange-100 to-transparent mt-20 -skew-y-2
+}
+.dish-image{
+    @apply w-full h-[140px] overflow-hidden rounded-tl-3xl rounded-tr-3xl relative
+}
+.img-cover{
+    @apply w-full h-full object-cover
+}
+.space-dish{
+    @apply p-2 w-full sm:w-6/12 lg:w-3/12
+}
+.dish-layer{
+    @apply absolute inset-0 w-full h-full bg-black/40
+}
+.dish-status{
+    @apply absolute top-3 right-3 inline-block bg-orange-500 px-2 py-1 text-xs rounded-3xl text-white font-[500] 
+}
+.rating{
+    @apply text-orange-500
+}
+.price-amount{
+    @apply text-[14px] font-semibold
+}
+.discount{
+    @apply text-gray-500 font-normal line-through
+}
+.buy-button{
+    @apply px-2 rounded-lg bg-orange-500 inline-block my-2 text-white capitalize
+    text-base
+}
+
+
+
+/* PRICING */
+
+
+.pricing{
+    @apply mt-20
+}
+.pricing-row{
+    @apply flex flex-wrap
+}
+.pricing-spacing{
+    @apply w-full h-full p-4 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 2xl:w-3/12 mx-auto
+}
+.pricing-column{
+    @apply  py-10 border-2 border-yellow-500 rounded-xl border-dashed bg-yellow-100 relative
+}
+.card-header{
+    @apply text-orange-800 text-center text-[20px] font-semibold my-4
+}
+.price-naira{
+    @apply mr-1 text-2xl 
+}
+.price-figure{
+    @apply font-semibold text-gray-700 text-[45px]
+}
+.pricing-message{
+    @apply text-center my-1 text-base text-gray-500
+}
+.pricing-list{
+    @apply w-full 
+}
+.pricing-item{
+    @apply my-2
+}
+.price-check{
+    @apply  mr-3 text-white px-0.5 rounded-full bg-orange-500
+}
+.order-button{
+    @apply mt-4 bg-orange-500 px-2 rounded-md py-1 text-white
+}
+
+.price-badge{
+    @apply absolute -top-1 -right-[20px] text-white bg-orange-500 px-4 py-2 capitalize font-bold text-[10px] after:h-full after:w-[30px]  after:absolute after:top-0 after:right-0 after:bg-gradient-to-l after:-rotate-45 after:origin-bottom-right after:-z-10 after:bg-orange-800
+}
+
+
+
+
+
+/* Testimonials */
+
+.testimonial{
+    @apply bg-gradient-to-b from-orange-100 to-transparent mt-20
+}
+.testimonial-subheading{
+    @apply  text-[20px] md:text-2xl font-semibold text-gray-900 py-3
+}
+.testimonial-header-div{
+    @apply w-full md:w-10/12 lg:w-7/12
+}
+.testimony-spacing{
+    @apply w-full lg:w-6/12  2xl:w-3/12 px-3 py-2
+}
+.testimony-user-image{
+    @apply  w-[50px] h-[50px] lg:h-[60px] lg:w-[60px] inline-block rounded-full overflow-hidden mr-2
+}
+.testimony-user-header{
+    @apply flex items-center py-2
+}
+.testimonial-username{
+    @apply block text-base font-medium capitalize text-gray-500 
+}
+.twitter-handle{
+    @apply text-orange-500 font-semibold text-[14px]
+}
+.testimony-content{
+    @apply text-gray-700
+}
+.gallery-spacing{
+    @apply w-6/12 p-2  lg:w-3/12
+}
+.gallery-div{
+    @apply  h-24 sm:h-32 md:h-24 overflow-hidden rounded-2xl relative after:w-full after:h-full after:inset-0 after:bg-black/40 after:absolute 
+}
+.gallery-image{
+    @apply w-full h-full object-cover 
+}
+
+
+/* DOWNLOAD APP */
+
+.download{
+    @apply h-[400px] w-full bg-[url('./images/bg-image/app-bg.png')] bg-no-repeat bg-cover bg-center mt-20
+}
+
+.download-spacing{
+    @apply flex h-[400px] items-center w-7/12
+}
+.download-content{
+    @apply w-full mb-20
+}
+.download-mobile{
+    @apply text-gray-900 text-2xl my-2 font-semibold sm:text-[28px] lg:text-3xl
+}
+.download-p{
+    @apply text-gray-700
+}
+.d-logo-cont{
+    @apply flex w-full mx-auto h-[30px] justify-around my-4
+}
+.download-logos{
+    @apply h-[30px] w-[72px] rounded-2xl md:w-[80px] md:h-[32px] lg:w-[100px] lg:h-[40px]
+}
+.footer{
+    @apply my-28 
+}
+.caferio-spacing{
+    @apply w-full lg:w-[40%] p-2 mb-20
+}
+.footer-spacing{
+    @apply w-full md:w-6/12 lg:w-[30%] 
+}
+.footer-img-div{
+    @apply h-10 w-10 rounded-full inline-block
+}
+.footer-img{
+    @apply h-10 w-10 rounded-full object-cover
+}
+.footer-img-name{
+    @apply text-2xl font-semibold 
+}
+.caferio-info{
+    @apply w-full md:w-10/12 lg:w-7/12 mr-auto
+}
+.footer-link-spacing{
+    @apply w-6/12
+}
+.footer-link-header{
+    @apply text-gray-900 font-semibold text-xl mb-10
+}
+.footer-ul{
+    @apply w-full
+}
+.footer-items{
+    @apply my-2 text-gray-600 capitalize
+}
+.logo-icon-div{
+    @apply inline-block text-white mr-3 text-[20px] rounded-md px-2
+}
+.loader{
+    @apply fixed inset-0 bg-orange-50 flex items-center justify-center h-full w-full z-40
+}
+.loader-div{
+    @apply h-[40px] w-[40px] rounded-full border-4 border-orange-600 border-t-orange-200 animate-spin
+}
+@tailwind utilities;
